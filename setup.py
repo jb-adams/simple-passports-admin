@@ -18,7 +18,8 @@ except LookupError:
 with open("README.md", "r") as fh:
     long_description = fh.read()
 install_requires = [
-    "click"
+    "click",
+    "jsonpickle"
 ]
 
 setuptools.setup(

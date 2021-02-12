@@ -4,8 +4,8 @@ from ga4gh.passports.utils.dirutils import DirUtils
 
 @click.command()
 def init():
-    config_dir = DirUtils.render_config_dir()
-    if os.path.exists(config_dir):
-        print("config dir %s already exists" % config_dir)
+    brokers_dir = DirUtils.render_brokers_dir()
+    if os.path.exists(brokers_dir):
+        print("config dir %s already exists" % brokers_dir)
     else:
-        DirUtils.create_secure_directory(config_dir)
+        DirUtils.create_secure_directory(brokers_dir)
